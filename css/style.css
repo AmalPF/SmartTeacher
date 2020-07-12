@@ -1,7 +1,15 @@
+/* including icons */
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+/* including font famliy Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
 
 
 /* common styling to the whole website */
+*{
+    font-family: Montserrat;
+}
+
 a{
     text-decoration: none;
 }
@@ -188,6 +196,55 @@ h2 {
     background-image: linear-gradient(to right, dodgerblue, blue, dodgerblue); /* Standard syntax (must be last) */
 }
 
+#classroom-list {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#classroom-list .classroom-container {
+    width: 240px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+#classroom-list .classroom-container .part-1 {
+    position: relative;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    z-index: -1;
+}
+
+#classroom-list .classroom-container .part-1 img {
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#classroom-list .classroom-container .part-2 {
+    background-color: dodgerblue;
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+}
+
+#classroom-list .classroom-container .part-2 div {
+    margin-bottom: 10px;
+}
+
+#classroom-list .classroom-container .part-2 button {
+    border: none;
+    color: dodgerblue;
+    background-color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
 
 
 /* students section */
@@ -195,14 +252,107 @@ h2 {
     margin-top: 30px;
 }
 
+#add-student-container {
+    text-align: center;
+    margin: 30px;
+}
 
-/* help section */
-#help-section {
-    margin-top: 30px;
+#add-student-container div {
+    width: 200px;
+    display: inline-block;
 }
 
 
+
+/* help section */
+#help-section {
+    margin-top: 50px;
+}
+
+#contact-list {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-list .contact-container {
+    width: 240px;
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(137, 194, 252);
+}
+
+#contact-list .contact-container img {
+    width: 150px;
+}
+
+#contact-list .contact-container p {
+    margin: 0;
+}
+
+
+
+
 /* footer section */
-#footer {
-    margin-top: 30px;
+#footer .top-part{
+    margin-top: 50px;
+    background-color: #F1F9FF;
+    padding: 10px;
+    color: dodgerblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .top-part ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footer a {
+    color: dodgerblue;
+}
+
+@media screen and (max-width: 700px) {
+    #footer .top-part .f1, .f2, .f3, .f4 {
+        margin: 0;
+        text-align: center;
+        display: inline;
+    }
+    #footer .top-part{
+        display: block;
+    }
+}
+
+#footer .top-part .f1, .f2, .f3, .f4 {
+    margin: 0 40px;
+}
+
+#footer .bottom-part {
+    background-color: dodgerblue;
+    color: white;
+    position: relative;
+    height: 50px;
+}
+
+#footer .bottom-part .left {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#footer .bottom-part .right {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+#footer .bottom-part i {
+    font-size: 20px;
+    padding: 10px;
 }
