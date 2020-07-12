@@ -1,1 +1,208 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+/* common styling to the whole website */
+a{
+    text-decoration: none;
+}
+
+h2 {
+    border-bottom: 2px solid #999;
+}
+
+
+
+/* header section styling */
+#header-section img {
+    margin: 5px;
+}
+
+#header-section h1 {
+    color: white;
+}
+
+#header-section li {
+    margin: 10px 20px 10px 0;
+}
+
+#header-section a {
+    color: white;
+}
+
+#header-section a:hover {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    #header-section h1{
+        font-size: 30px;
+    }
+  }
+
+
+
+/* Home section */
+#home-section {
+    margin-top: 10px;
+}
+
+#home-section h2 {
+    border-bottom: 2px solid #999;
+}
+
+#home-content {
+    display: inline;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+  }
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+  
+@media screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 0;
+    }
+}
+ 
+#login-container {
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: #aaa;
+    box-shadow: 0 0 8px 0 grey;
+    border-radius: 10px;
+}
+
+#login-container h3 {
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+#login-container .input-box {
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+#login-container .input-box i{
+    border-bottom: 1px solid #999;
+    margin: 5px;
+}
+
+#login-container input {
+    margin: 5px 0;
+    background-color: none;
+    outline: none;
+    border: none;
+    text-align: center;
+    padding: 0;
+} 
+
+
+#login-btn {
+    display: inline;
+    border: none;
+    padding: 30px;
+    margin: 0;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background-color: green; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, indigo, violet, indigo); /* Standard syntax (must be last) */
+}
+
+#login-btn:hover {
+    background-image: linear-gradient(to right, violet, indigo, violet); /* Standard syntax (must be last) */
+}
+
+
+
+/* classroom section */
+#classroom-section{
+    margin-top: 30px;
+}
+
+#classroom-section h2 {
+    border-bottom: 2px solid #999;
+}
+
+#classroom-container {
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: #aaa;
+    box-shadow: 0 0 8px 0 grey;
+    border-radius: 10px;
+}
+
+#classroom-container h3 {
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+#classroom-container .input-classroom {
+    margin: 5px 0;
+    background-color: none;
+    border: 1px solid dodgerblue;
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 20px;
+} 
+
+#create-btn {
+    display: inline;
+    border: none;
+    outline: none;
+    padding: 2px 30px 6px 30px;
+    margin: 0;
+    border-radius: 20px;
+
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background-color: green; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, blue, dodgerblue, blue); /* Standard syntax (must be last) */
+}
+
+#create-btn:hover {
+    background-image: linear-gradient(to right, dodgerblue, blue, dodgerblue); /* Standard syntax (must be last) */
+}
+
+
+
+/* students section */
+#students-section {
+    margin-top: 30px;
+}
+
+
+/* help section */
+#help-section {
+    margin-top: 30px;
+}
+
+
+/* footer section */
+#footer {
+    margin-top: 30px;
+}
