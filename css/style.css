@@ -4,6 +4,9 @@
 /* including font famliy Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
 
+@import url("signup.css");
+
+
 
 /* common styling to the whole website */
 *{
